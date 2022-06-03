@@ -1,0 +1,2 @@
+font-family: 'Confortaa', cursiva;
+família de fontes: 'Raleway', sem serifa;
