@@ -10,11 +10,11 @@ function changeNavColorWhenScrolled() {
 }
 
 // adicionando a classe menu-expanded quando clicar no open-menu
-function openMenu() {
-  document.body.classList.add('menu-expanded')
-}
+// function openMenu() {
+//   document.body.classList.add('menu-expanded')
+// }
 
 // removendo a classe menu-expanded quando clicar no close-menu
-function closeMenu() {
-  document.body.classList.remove('menu-expanded')
-}
+// function closeMenu() {
+//   document.body.classList.remove('menu-expanded')
+// }

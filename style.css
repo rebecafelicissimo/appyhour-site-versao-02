@@ -1,4 +1,4 @@
-/* Configurações Gerais */
+/*  Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +6,19 @@
   border: none;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 :root { /* é a raiz do meu documento */ 
   font-size: 62.5%; /* 10px em todo o documento como padrão */ 
   /* variáveis */
   --primary-color: #221e35;
+  --secondary-color: #E73739;
   --title-color: #212529;
   --paragraph-color: #495057;
   --dark-white-color: #f6f6f6;
@@ -22,6 +31,7 @@
   --nav-height: 7.2rem;
 }
 
+/* Configurações Gerais */
 html,
 body {
   width: 100%;
@@ -44,7 +54,7 @@ body{
 }
 
 section {
-  padding-block: 10rem;
+  padding-top: 10rem;
 }
 
 section h1 {
@@ -52,21 +62,21 @@ section h1 {
   font-size: 3.4rem;
 }
 
-section h2 {
+span {
+  color: var(--secondary-color);
+}
+
+section h3 {
   font-size: 1.4rem;
 }
 
 section p {
-  font-size: 1.8rem;
   color: var(--paragraph-color);
+  line-height: 150%;
 }
 
 img {
   width: 100%;
-}
-
-a {
-  text-decoration: none;
 }
 
 .button {
@@ -81,7 +91,6 @@ a {
 
   display: flex;
   align-items: center;
-  /* gap: 1.6rem; */
   margin-inline: auto;
 }
 
@@ -91,6 +100,28 @@ a {
   justify-content: center;
   gap: 3.2rem;
 } */
+.section-title {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  line-height: 150%;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.6rem;
+}
+
+.subtitle {
+  font-size: 3rem;
+  line-height: 3.9rem;
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 6rem;
+}
+
+.list-style {
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--paragraph-color);
+}
 
 /* ====== Navegação ======  */
 nav {
@@ -112,20 +143,16 @@ nav.scroll {
   background-color: var(--primary-color);
 }
 
-nav.scroll a.logo svg path {
+nav.scroll a.logo path {
   fill: var(--dark-white-color);
+}
+
+nav.scroll a.logo path[fill*="#E73739"] {
+  fill: #E73739;
 }
 
 nav.scroll button svg path {
   stroke: var(--dark-white-color);
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav ul li a {
-  text-decoration: none;
 }
 
 nav button {
@@ -155,30 +182,19 @@ nav button {
   z-index: -1;
 }
 
-#home h2 {
-  color: var(--primary-color);
-  text-transform: uppercase;
-  line-height: 150%;
-  letter-spacing: 0.08em;
-  margin-bottom: 1.6rem;
-}
-
 #home h1 {
   line-height: 130%;
   margin-bottom: 2.4rem;
 }
 
 #home p {
-  line-height: 150%;
+  font-size: 1.8rem;
   margin-bottom: 3.2rem;
 }
 
 #home button {
+  gap: 1rem;
   margin-bottom: 6rem;
-}
-
-#home button svg {
-  display: none;
 }
 
 .stats {
@@ -209,3 +225,77 @@ nav button {
   line-height: 150%;
   color: var(--primary-color);
 }
+
+/* ====== Benefícios ======  */
+
+.cards { 
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;  
+}
+
+.card {
+  background-color: var(--primary-light-color);
+  border: 1px solid var(--third-light-color);
+  border-radius: 0.6rem;
+  padding: 2.4rem;
+  text-align: left;
+}
+
+.card svg {
+  margin-bottom: 1.6rem;
+}
+
+.card h3 {
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  color: var(--title-color);
+  margin-bottom: 1.6rem;
+}
+
+.card p {
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--paragraph-color);
+}
+
+/* ====== Mais Benefícios ======  */
+
+#moreBenefits ul {
+  margin-bottom: 4rem;
+}
+
+#moreBenefits ul li,
+#payments ul li {
+  margin-bottom: 1.6rem;
+}
+
+#moreBenefits ul li:last-child,
+#payments ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* ====== Mensalidade ======  */
+
+#payments .card {
+  text-align: center;
+}
+
+#payments .card h2 {
+  color: var(--secondary-color);
+  font-size: 6rem;
+  margin-bottom: 1.6rem;
+}
+
+#payments .card p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#payments ul {
+  margin-top: 4rem;
+}
+
+
+
+
