@@ -8,3 +8,13 @@ function changeNavColorWhenScrolled() {
     navigationTag.classList.remove('scroll')
   }
 }
+
+// adicionando a classe menu-expanded quando clicar no open-menu
+function openMenu() {
+  document.body.classList.add('menu-expanded')
+}
+
+// removendo a classe menu-expanded quando clicar no close-menu
+function closeMenu() {
+  document.body.classList.remove('menu-expanded')
+}

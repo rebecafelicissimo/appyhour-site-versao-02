@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>appy hour</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./dark-mode-style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,8 +15,8 @@
       rel="stylesheet"
     />
   </head>
-  <body onscroll="changeNavColorWhenScrolled()">
-    <nav id="navigation" class="">
+  <body onscroll="changeNavColorWhenScrolled()" class="menu-expanded">
+    <nav id="navigation">
       <div class="container">
         <!-- logo do appy hour -->
         <a class="logo" href="#">
@@ -81,8 +82,20 @@
           </svg>
         </a>
 
+        <div class="menu">
+          <ul>
+            <li><a href="#home">Sobre nós</a></li>
+            <li><a href="#">Benefícios</a></li>
+            <li><a href="#">Mensalidade</a></li>
+            <li><a href="#">Cadastro</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+
+          <a href="#" class="button">falar com o appy hour</a>          
+        </div>
+
         <!-- botão do open menu -->
-        <button>
+        <button onclick="openMenu()" class="open-menu">
           <svg
             width="40"
             height="40"
@@ -114,7 +127,24 @@
           </svg>
         </button>
 
-        <!-- virão todos os elementos que farão parte do meu cabeçalho e navegação -->
+        <!-- close menu -->
+        <button onclick="closeMenu()" class="close-menu">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30 10L10 30M10 10L30 30"
+              stroke="#FFFAF1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </div>
     </nav>
 

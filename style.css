@@ -13,6 +13,7 @@
   --title-color: #212529;
   --paragraph-color: #495057;
   --dark-white-color: #f6f6f6;
+  --body-bg-color: #f6f6f6;
 
   --primary-light-color: #F3F2F8;
   --secondary-light-color: #DBD8E9;
@@ -32,6 +33,7 @@ body{
   font-size: 1.6rem;
   text-align: center;
   overflow: overlay;
+  background-color: var(--body-bg-color);
 }
 
 .container {
@@ -59,11 +61,6 @@ section p {
   color: var(--paragraph-color);
 }
 
-button {
-  background: none;
-  cursor: pointer;  
-}
-
 .button {
   background-color: var(--primary-color);
   border-radius: 4rem;
@@ -76,12 +73,16 @@ button {
 
   display: flex;
   align-items: center;
-  gap: 1.6rem;
+  /* gap: 1.6rem; */
   margin-inline: auto;
 }
 
 img {
   width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* ====== Navegação ======  */
@@ -102,6 +103,10 @@ nav .container {
   justify-content: space-between;
 }
 
+nav a.logo svg {
+  width: 300%;
+}
+
 nav.scroll {
   background-color: var(--primary-color);
 }
@@ -113,6 +118,115 @@ nav.scroll a.logo svg path {
 nav.scroll button svg path {
   stroke: var(--dark-white-color);
 }
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;  
+}
+
+/* nav .menu,
+nav .close-menu {
+  position: fixed;
+} */
+
+/* .close-menu {
+  opacity: 0;
+  visibility: hidden;
+} */
+
+/* ====== Menu ======  */
+.menu,
+.close-menu,
+body.menu-expanded .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  margin-top: 6rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.1rem;
+}
+
+.menu ul li a {
+  color: var(--dark-white-color);
+}
+
+.menu .button {
+  background-color: var(--third-light-color);
+  color: var(--dark-white-color);
+  margin-top: 4.8rem;
+}
+
+/* .menu .button:hover {
+  background-color: var(--secondary-light-color);
+  color: var(--primary-color);
+} */
+
+/* ====== Body com Menu Expanded ======  */
+body.menu-expanded {
+  overflow: hidden; /* overflow é o que está transbordando para fora */
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.menu-expanded .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 100vh;
+  padding-top: var(--nav-height);
+}
+
+body.menu-expanded nav {
+  position: relative;
+}
+
+/* body.menu-expanded .logo,
+body.menu-expanded .close-menu {
+  position: relative;
+  z-index: 10;
+} */
+
+/* body.menu-expanded .logo path {
+  fill: var(--dark-white-color);
+} */
+
+/* body.menu-expanded button path {
+  stroke: var(--dark-white-color);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ====== Home ======  */
 #home {

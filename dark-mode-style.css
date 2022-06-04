@@ -1,0 +1,11 @@
+.dark-mode:root {
+  --primary-color: #221e35;
+  --title-color: ##f6f6f6;
+  --paragraph-color: #495057;
+  --dark-white-color: #f6f6f6;
+  --body-bg-color: #000000;
+
+  --primary-light-color: #F3F2F8;
+  --secondary-light-color: #DBD8E9;
+  --third-light-color: #AAA4CC;
+}
