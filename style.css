@@ -54,7 +54,7 @@ body{
 }
 
 section {
-  padding-top: 10rem;
+  padding-block: 10rem; 
 }
 
 section h1 {
@@ -192,9 +192,13 @@ nav button {
   margin-bottom: 3.2rem;
 }
 
-#home button {
+#home a {
   gap: 1rem;
   margin-bottom: 6rem;
+}
+
+#home a svg {
+  display: none;
 }
 
 .stats {
@@ -260,13 +264,18 @@ nav button {
 }
 
 /* ====== Mais Benefícios ======  */
+#moreBenefits {
+  background-color: #ffffff;
+}
 
-#moreBenefits ul {
+#moreBenefits ul,
+#register ol {
   margin-bottom: 4rem;
 }
 
 #moreBenefits ul li,
-#payments ul li {
+#payments ul li,
+#register ol li {
   margin-bottom: 1.6rem;
 }
 
@@ -295,6 +304,28 @@ nav button {
 #payments ul {
   margin-top: 4rem;
 }
+
+/* ====== Cadastro ======  */
+#register p,
+#happyhour-menu p {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+/* ====== Cardápio ======  */
+#happyhour-menu {
+  background-color: var(--primary-light-color);
+}
+
+#happyhour-menu iframe {
+  width: 100%;
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+
+
+
 
 
 
