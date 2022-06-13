@@ -47,7 +47,7 @@ body{
 }
 
 .container {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: min(50rem, 100%);  
   margin-inline: auto;
   padding-inline: 2.4rem;
@@ -434,6 +434,17 @@ nav button {
 .form-control.success i.fa-check-circle {
   color: #2ecc71;
   visibility: visible;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--primary-color);
+  padding-block: 20px;
+}
+
+footer p {
+  color: #ffffff;
+  line-height: 150%;
 }
 
 

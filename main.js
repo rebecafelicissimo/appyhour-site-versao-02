@@ -28,7 +28,6 @@ const email = document.querySelector('#email')
 
 form.addEventListener('submit', function (e) {
   e.preventDefault() // para não enviar o formulário
-
   checkInputs()
 })
 
