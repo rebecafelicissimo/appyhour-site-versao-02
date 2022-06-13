@@ -1,0 +1,104 @@
+<section id="moreBenefits">
+      <div class="container">
+        <h3 class="section-title">Mais benefícios</h3>
+        <h2 class="subtitle">Achou pouco? Quer mais benefícios?</h2>
+
+        <div class="content">
+          <ul class="list-style">
+            <li>Fidelize seus clientes;</li>
+            <li>Ganhe propaganda orgânica;</li>
+            <li>Aumente sua receita;</li>
+            <li>Seja transparente com seu cliente;</li>
+            <li>Todo mundo gosta de happy hour;</li>
+            <li>e muito mais.</li>
+          </ul>
+
+          <img src="./assets/images/tres-celulares-inclinados.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="payments">
+      <div class="container">
+        <h3 class="section-title">Mensalidade</h3>
+        <h2 class="subtitle">
+          Cadastre-se, <br />
+          Crie seu cardápio,<br />
+          <span>Valide com a gente!</span>
+        </h2>
+
+        <div class="content">
+          <div class="card">
+            <h3>Você vai pagar apenas...</h3>
+            <h2>R$ 0</h2>
+            <p>Válido para os 2 primeiros meses.</p>
+          </div>
+
+          <ul class="list-style">
+            <li>Cancele quando quiser, é só nos comunicar;</li>
+            <li>Queremos ouvir você, para melhorarmos sempre;</li>
+            <li>Cresça conosco.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="register">
+      <div class="container">
+        <h3 class="section-title">Cadastro</h3>
+        <h2 class="subtitle">Como faço para cadastrar meu estabelecimento?</h2>
+        <p>
+          É bem simples e rápido. Caso tenha qualquer dúvida, nossos contatos
+          estarão logo abaixo.
+        </p>
+
+        <div class="content">
+          <ol class="list-style">
+            <li>clique no botão de cadastrar;</li>
+            <li>Você será redirecionado para a nossa plataforma;</li>
+            <li>Em seguida criar conta;</li>
+            <li>Seguir o passo a passo e</li>
+            <li>Pronto!</li>
+          </ol>
+
+          <a
+            href="https://estabelecimento.appyhour.com.br/"
+            class="button"
+            target="_blank"
+            >Cadastrar</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="happyhour-menu">
+      <div class="container">
+        <h3 class="section-title">Cardápio</h3>
+        <h2 class="subtitle">
+          Como eu faço para criar meu cardápio de happy hour?
+        </h2>
+        <p>
+          Aqui vai mais um tutorial simples e prático para você criar seu
+          cardápio de happy hour tranquilamente.
+        </p>
+
+        <div class="content">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/8NZPh-PwfII"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+
+          <a
+            href="https://estabelecimento.appyhour.com.br/"
+            class="button"
+            target="_blank"
+            >Criar cardápio</a
+          >
+        </div>
+      </div>
+    </section>
