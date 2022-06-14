@@ -393,8 +393,8 @@ nav button {
 
 .form-control i {
   position: absolute;
-  top: 45px;
-  right: 10px;
+  top: 35px;
+  right: 15px;
   visibility: hidden;
 }
 
@@ -414,6 +414,14 @@ nav button {
   width: 100%;
   padding: 10px;
   margin-top: 0;
+  cursor: pointer;
+}
+
+#contact .form button:hover {
+  background-color: var(--third-light-color);
+  border: 2px solid var(--third-light-color);
+  color: var(--primary-color);
+  font-weight: 700;
 }
 
 /* Erros and Sucess */

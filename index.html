@@ -794,7 +794,9 @@
           <h2 class="subtitle">Se preferir, nós entramos em contato com você</h2>
           <p>Preencha o formulário abaixo e um membro de nossa equipe entrará em contato.</p>
 
-          <form action="https://formsubmit.io/send/d2231a96-0c64-410b-9705-f201164cc4f7" id="form" class="form">
+          <form action="" method="post"></form>
+
+          <form action="https://formsubmit.co/578058582eaf47c4524949af374e1762" method="POST" id="form" class="form">
             <!-- nome -->
             <div class="form-control">
               <label for="userName">Nome Completo:</label>
@@ -826,7 +828,7 @@
             <!-- telefone -->    
             <div class="form-control">
               <label for="phoneNumber">Telefone para Contato:</label>
-              <input type="number" id="phoneNumber" placeholder="Digite seu telefone" />
+              <input type="number" id="phoneNumber" placeholder="(99) 99999-9999" required />
               <!-- ícone de erro-->
               <i class="fas fa-exclamation-circle"></i>
               <!-- ícone de sucesso -->
@@ -841,7 +843,7 @@
               <input
                 type="text"
                 id="city"
-                placeholder="Digite sua cidade"
+                placeholder="Digite sua cidade" required
               />
               <!-- ícone de erro-->
               <i class="fas fa-exclamation-circle"></i>
@@ -857,7 +859,7 @@
               <input
                 type="text"
                 id="state"
-                placeholder="Digite seu Estado"
+                placeholder="Digite seu Estado" required
               />
               <!-- ícone de erro-->
               <i class="fas fa-exclamation-circle"></i>
@@ -883,7 +885,7 @@
               <small>Mensagem de erro</small>
             </div>
 
-            <button onclick="submitFormOk()" type="submit">Enviar</button>
+            <button type="submit">Enviar</button>
           </form>
 
         </div>
