@@ -26,8 +26,8 @@ const email = document.querySelector('#email')
 // const password = document.querySelector('#password')
 // const passwordConfirmation = document.querySelector('#passwordConfirmation')
 
-form.addEventListener('submit', function (e) {
-  e.preventDefault() // para não enviar o formulário
+form.addEventListener('submit', function () {
+  // e.preventDefault() // para não enviar o formulário
   checkInputs()
 })
 
@@ -100,4 +100,11 @@ function checkEmail(email) {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
     email
   )
+}
+
+function submitFormOk() {
+  const button = document.querySelector('form button');
+  button.addEventListener('click', function() {
+    alert('Formulário enciafo com sucesso');
+  })
 }
